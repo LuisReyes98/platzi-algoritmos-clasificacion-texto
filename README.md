@@ -1,8 +1,7 @@
 # Curso de Algoritmos de Clasificación de Texto
 
-Notas de alumnos:
+[Notas de alumnos](https://github.com/rb-one/Curso_Algoritmos_Clasificacion_Texto/blob/main/Notas/notes.md)
 
-https://github.com/rb-one/Curso_Algoritmos_Clasificacion_Texto/blob/main/Notas/notes.md
 
 ## Clase 1 Introducción a la desambiguación
 
@@ -48,3 +47,10 @@ Aplicaciones posibles:
 - Censura en redes sociales.
 
 - Orden de datos no-estructurados
+
+
+## Clase 2 Etiquetado rápido en Python: español e inglés
+
+en la clase anterior vimos que el problema grande del procesamiento de lenguaje natural es la Ambigüedad
+
+https://colab.research.google.com/drive/1GLrHVS5aXHD_0ZWpYzKLIOUA6Xono6gt?usp=sharing

@@ -54,3 +54,36 @@ Aplicaciones posibles:
 en la clase anterior vimos que el problema grande del procesamiento de lenguaje natural es la Ambigüedad
 
 https://colab.research.google.com/drive/1GLrHVS5aXHD_0ZWpYzKLIOUA6Xono6gt?usp=sharing
+
+## Clase 3 Etiquetado rápido en Python: Stanza (Stanford NLP)
+
+Uso de stanza para el etiquetado de texto
+
+## Clase 4 Cadenas de Markov
+
+bases teoricas utilizadas en la creacion de Stanza
+
+```python
+import nltk
+nltk.download('punkt') # tokenizer tokenizador
+nltk.download('averaged_perceptron_tagger') # tagger etiquetador
+from nltk import word_tokenize
+```
+
+los tokenizer y tagger por defecto en ingles son:
+
+**Punkt** es una palabra alemana que significa puntuacion y es un algoritmo de tokenizacion crado por programadores alemanes en 2016
+
+**Averaged perceptron tagger** es un etiquetador por perceptron promediado
+
+![escalera de modelos](./images/escalera_de_modelos.png)
+
+Una escalera de modelo no es necesariamente lo estandar al realizar etiquetado pero es el camino que seguiremos en esta etapa del curso.
+
+![cadenas de markov](./images/cadenas_de_markov.png)
+
+las cadenas de markov son cadenas de estados finitos, en este caso las palabras, que se pueden representar como grafos dirigidos.
+
+### Recurso de alumnos
+
+![imagen alumno](https://static.platzi.com/media/user_upload/markov_chain-dd154438-c3a4-40aa-9bac-e19fc3a3a41c.jpg)

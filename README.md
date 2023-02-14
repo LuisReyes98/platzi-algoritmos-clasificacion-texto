@@ -87,3 +87,10 @@ las cadenas de markov son cadenas de estados finitos, en este caso las palabras,
 ### Recurso de alumnos
 
 ![imagen alumno](https://static.platzi.com/media/user_upload/markov_chain-dd154438-c3a4-40aa-9bac-e19fc3a3a41c.jpg)
+
+## Clase 5 Modelos Markovianos latentes (HMM)
+
+[NLP: Pretrained Named Entity Recognition (NER)](https://medium.com/@b.terryjack/nlp-pretrained-named-entity-recognition-7caa5cd28d7b)
+
+### Modelos markovianos latentes
+

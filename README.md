@@ -90,7 +90,32 @@ las cadenas de markov son cadenas de estados finitos, en este caso las palabras,
 
 ## Clase 5 Modelos Markovianos latentes (HMM)
 
+Material de lectura
+
 [NLP: Pretrained Named Entity Recognition (NER)](https://medium.com/@b.terryjack/nlp-pretrained-named-entity-recognition-7caa5cd28d7b)
 
 ### Modelos markovianos latentes
 
+Se ve genial el punto en donde da la explicación del uso de los modelos Markovianos en el etiquetado de palabras. Algo que encontré y me sirvió mucho es la siguiente definición.
+
+La cadena de Markov es una serie de eventos, en la que la probabilidad de que ocurra un evento depende del evento anterior. Este tipo de cadenas tienen memoria.
+
+Este tipo de calculos se logra utilizando el teorema de Bayes.
+
+Sea  ${\displaystyle \{A_{1},A_{2},...,A_{i},...,A_{n}\}}$ un conjunto de sucesos mutuamente excluyentes y exhaustivos tales que la probabilidad de cada uno de ellos es distinta de cero ${\displaystyle (\operatorname {P} [A_{i}]\neq 0\; \text{ para }  i=1,2,\dots ,n)}$ Si $B$ es un suceso cualquiera del que se conocen las probabilidades condicionales ${\displaystyle P(B|A_{i})}$ , entonces la probabilidad $P(A_i|B)$ entonces la probabilidad $P(A_i|B)$ viene dada por la expresión:
+
+$${\displaystyle P(A_{i}|B)={\frac {P(B|A_{i})P(A_{i})}{P(B)}}}$$
+
+donde:
+
+$P(A_i)$ son las probabilidades a priori,
+$P(B|A_i)$  es la probabilidad de $B$ en la hipótesis $A_i$,
+$P(A_i|B)$  son las probabilidades a posteriori.
+
+### HMM (Hidden Markov Model)
+
+Pensemos en secuencia de palabras y secuencia de etiquetas de cada una de esas palabras.
+
+(pedro, es, ingeniero) | (sustantivo, Verbo, Sustantivo)
+
+Esto es una cadena latente (oculta)y el propósito del modelo es descubrir o encontrar cual es esa cadena.

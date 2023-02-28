@@ -198,3 +198,5 @@ B: probabilidades de emisión
 Uso de un modelo markoviano latente (Hidden Markov Model HMM) para el calculo de acciones de la bolsa:
 
 ![HMM_stock](./images/HMM_stock.png)
+
+## Clase 7 Fases de entrenamiento de un HMM

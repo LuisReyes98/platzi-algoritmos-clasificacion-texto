@@ -119,3 +119,74 @@ Pensemos en secuencia de palabras y secuencia de etiquetas de cada una de esas p
 (pedro, es, ingeniero) | (sustantivo, Verbo, Sustantivo)
 
 Esto es una cadena latente (oculta)y el propósito del modelo es descubrir o encontrar cual es esa cadena.
+
+## Clase 6 Entrenando un HMM
+
+![HMM_10](./images/HMM_10.png)
+
+![HMM_11](./images/HMM_11.png)
+
+![HMM_12](./images/HMM_12.png)
+
+
+### Regla de Bayes
+
+la probabilidad de que una palabra $w$ le corresponda una etiqueta $t$ es dada por
+
+$$
+P(t\mid w)=\frac {P(w\mid t) \cdot P(t)}{P(w)}
+$$
+
+$t$ = tag
+$w$ = word
+<!-- A, B	=	events -->
+$P(A|B)$	=	probability of A given B is true
+$P(B|A)$	=	probability of B given A is true
+$P(A), P(B)$	=	the independent probabilities of A and B
+
+
+se puede resumir la ecuacion a 
+
+$\frac{arg max}{t^n} P(w^n\mid t^n) = t^{n} = P(w^n\mid t^n) \cdot P(t^n)$
+
+ya que todas las palabras en el sistema siguen una secuencia y dividirlas entre la probabilidad de la palabra se vuelve indiferente ya que el sistema mantiene la generalidad a pesar se remover el denominador
+
+de este modo solo debemos calcular 2 probabilidades en lugar de 3
+
+### Modelo markoviano Latente
+
+$T^n$ = La secuencia de etiquetas mas probable para la secuencia de palabras $w^n$
+
+$t$ = palabra
+$w$ = etiqueta
+
+$P(t|w)$ = probabilidad de que a la etiqueta $t$ le corresponda a la palabra $w$
+
+$P(w|t)$= probabilidad de que la palabra $w$ le corresponda a la etiqueta $t$
+
+de esta forma la probabilidad maxima se define como
+
+$$
+T^n = \frac{argmax}{t^n}P(t^n|w^n) = \frac{argmax}{t^n}P(w^n|t^n)*P(t^n)
+$$
+
+del mismo modo debemos considerar dos hipotesis
+
+#### Hipotesis de independencia
+
+$P(w^n|t^n) = \prod^{n}_{i=1}P(w_i|t_i)=P(w_1|t_1)P(w_2|t_2).....$
+
+#### Hipotesis Markoviana
+
+$P(t^n)=\prod^{n}_{i=1}P(t_i|t_{i-1})=P(t_2|t_1)P(t_3|t_2).....$
+
+#### Formula del Modelo Markoviano Latente
+
+$T^n = \frac{\text{arg max}}{t^n} \prod^n_{i=1}P(w_i|t_i)P(t_i|t_{i-1}) $
+
+Estas son las probabilidades que calcula un modelo Markoviano latente , hace todas las combinaciones posibles y encuentra cual es el maximo.
+
+
+Uso de un modelo markoviano latente (Hidden Markov Model HMM) para el calculo de acciones de la bolsa:
+
+![HMM_stock](./images/HMM_stock.png)

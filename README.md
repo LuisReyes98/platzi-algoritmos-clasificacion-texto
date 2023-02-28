@@ -186,6 +186,14 @@ $T^n = \frac{\text{arg max}}{t^n} \prod^n_{i=1}P(w_i|t_i)P(t_i|t_{i-1}) $
 
 Estas son las probabilidades que calcula un modelo Markoviano latente , hace todas las combinaciones posibles y encuentra cual es el maximo.
 
+Para entrenar el modelo, podemos decir que esta entrenado una vez hayamos calculado:
+
+A: matriz de transición
+
+B: probabilidades de emisión
+
+(A,B) = Modelo entrenado
+
 
 Uso de un modelo markoviano latente (Hidden Markov Model HMM) para el calculo de acciones de la bolsa:
 

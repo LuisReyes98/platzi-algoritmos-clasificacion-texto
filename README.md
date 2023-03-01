@@ -200,3 +200,5 @@ Uso de un modelo markoviano latente (Hidden Markov Model HMM) para el calculo de
 ![HMM_stock](./images/HMM_stock.png)
 
 ## Clase 7 Fases de entrenamiento de un HMM
+
+## Clase 8 Entrenando un HMM en Python

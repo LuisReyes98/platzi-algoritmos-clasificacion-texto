@@ -202,3 +202,24 @@ Uso de un modelo markoviano latente (Hidden Markov Model HMM) para el calculo de
 ## Clase 7 Fases de entrenamiento de un HMM
 
 ## Clase 8 Entrenando un HMM en Python
+
+## Clase 9 El algoritmo de Viterbi
+
+● Entrenamiento del HMM
+
+El modelo aprende las probabilidades
+de emisión y transición.
+
+● Decodificación
+
+El modelo calcula la secuencia de
+etiquetas más probable.
+
+El algoritmo de Viterbi es un algoritmo de programación dinámica que se utiliza para encontrar la secuencia de etiquetas más probable para una secuencia de palabras.
+
+El algoritmo de Viterbi se encarga de encontrar entre un monton de secuencias de etiquetado palabra, encuentra la que posee la probabilidad mas alta.
+
+
+**El proceso mediante el cual un Modelo Markoviano Latente determina la secuencia de etiquetas más probable para una secuencia de palabras es:**
+
+el producto de a probabilidad inicial de encontrar esa etiqueta en la primera parte de esa secuencia este multiplicado por una probabilidad condicional.

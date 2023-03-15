@@ -2,6 +2,7 @@
 
 [Notas de alumnos](https://github.com/rb-one/Curso_Algoritmos_Clasificacion_Texto/blob/main/Notas/notes.md)
 
+[Google Docs de notas](https://docs.google.com/document/d/1N-x4ysa2vrL3SaTiKEmGtZ7S7tHfjfXU1D9Y7nRw6e4/edit?usp=sharing)
 
 ## Clase 1 Introducción a la desambiguación
 
@@ -223,3 +224,16 @@ El algoritmo de Viterbi se encarga de encontrar entre un monton de secuencias de
 **El proceso mediante el cual un Modelo Markoviano Latente determina la secuencia de etiquetas más probable para una secuencia de palabras es:**
 
 el producto de a probabilidad inicial de encontrar esa etiqueta en la primera parte de esa secuencia este multiplicado por una probabilidad condicional.
+
+## Clase 10 Cálculo de las probabilidades de Viterbi
+
+El algoritmo de Viterbi es uno de los algoritmos posibles a utilizar para construir el camino de probabilidades de las etiquetas más probables para una secuencia de palabras.
+
+[Wikipedia](https://es.wikipedia.org/wiki/Algoritmo_de_Viterbi)
+
+El algoritmo de Viterbi es un algoritmo de programación dinámica que permite hallar la secuencia más probable de estados ocultos (el llamado camino de Viterbi) que produce una secuencia observada de sucesos, especialmente en el contexto de fuentes de información de Márkov y modelos ocultos de Márkov.
+
+Se aplica de forma general en la descodificación de códigos convolucionales usados en redes de telefonía celular digital GSM y CDMA, módems de líneas conmutadas, satélites, comunicaciones espaciales y redes inalámbricas IEEE 802.11. También se usa en reconocimiento del habla, síntesis de habla, diarización, búsqueda de palabras clave, lingüística computacional y bioinformática.
+
+
+El algoritmo de Viterbi permite encontrar las secuencias de estados más probable en un Modelo oculto de Márkov (MOM),

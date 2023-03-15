@@ -237,3 +237,9 @@ Se aplica de forma general en la descodificación de códigos convolucionales us
 
 
 El algoritmo de Viterbi permite encontrar las secuencias de estados más probable en un Modelo oculto de Márkov (MOM),
+
+## Clase 10 Cálculo de las probabilidades de Viterbi
+
+## Clase 11  Carga del modelo HMM y distribución inicial
+
+El algoritmo de viterbi en python
